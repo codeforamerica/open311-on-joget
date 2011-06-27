@@ -7,13 +7,13 @@ Usage
     
 	Requires Joget V3 and MySQL
 			
-    1.	'Joget Application' directory contains the Joget application named as APP_version_timestamp.zip. Import this application in the Joget Application Designer and publish the application. Finally launch the published application. This will launch the 'Open311 Request Form' application.
+    1.	'Joget Application' directory contains the Joget application named as APP_123-version-timestamp.zip. Import this application in the Joget Application Designer and publish the application. Finally launch the published application. This will launch the 'Open311 Request Form' application.
   	# You can create a new application using the 'Make New Request' form which will create the request entry in the database.
 	# You can also view all the requests in the database using the 'Open311 Data List' form.
 
-    2.	The open311data.jsp takes the Open311 requests data from database and displays them in the xml specification which can be used by the Open311 Dashboard.
+    2.	The open311data.jsp takes the Open311 requests data from database and displays them in the xml specification which is be used by the Open311 Dashboard.
                                                                                            	
-	3.	The 'Open311 Sample Requests' is a text file which contains a couple of sample 311 requests.
+	3.	The 'Open311SampleRequests.txt' is a text file which contains a couple of sample 311 requests.
 	
 
 Copyright
