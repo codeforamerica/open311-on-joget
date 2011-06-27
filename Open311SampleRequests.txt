@@ -1,0 +1,41 @@
+An open service request:
+  
+<request>
+  <service_request_id>874195</service_request_id>
+  <status>Open</status>
+  <status_notes/>
+  <service_name>Sidewalk_Defect</service_name>
+  <service_code>025</service_code>
+  <description/>
+  <agency_responsible/>
+  <service_notice/>
+  <requested_datetime>2011-05-02 19:23:18.193</requested_datetime>
+  <updated_datetime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <expected_datetime>2011-05-10 08:30:00.0</expected_datetime>
+  <address>156 NOE ST SAN FRANCISCO , CA</address>
+  <address_id/>
+  <zipcode>94114</zipcode>
+  <lat>37.766457</lat>
+  <long>-122.433624</long>
+</request>
+
+A closed request:
+
+<request>
+  <service_request_id>874314</service_request_id>
+  <status>Closed</status>
+  <status_notes/>
+  <service_name>Damaged_City_Can</service_name>
+  <service_code>004</service_code>
+  <description/>
+  <agency_responsible/>
+  <service_notice/>
+  <requested_datetime>2011-05-02 23:42:00.867</requested_datetime>
+  <updated_datetime>2011-05-05 14:06:06.19</updated_datetime>
+  <expected_datetime>2011-05-05 08:30:00.0</expected_datetime>
+  <address>INTERSECTION of 16TH ST and MISSION ST</address>
+  <address_id/>
+  <zipcode/>
+  <lat>37.765053</lat>
+  <long>-122.41967</long>
+</request>
