@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
  <%@ page contentType="text/xml" %>
  <%@ page import="java.io.*" %>
  <%@ page import="java.sql.*" %>
- 
+ <%@ page import="java.text.*" %>
+
 <%
 String connectionURL = "jdbc:mysql://localhost:3306/v3wflowdb";
 String username = "root";
 String password = "";
 String tableName = "apps_formdata_open311_request_t";
-String sqlQuery = "SELECT * FROM  " + tableName + " ORDER BY dateCreated DESC";
+String dat="01/01/1970";
+String tim="00:00:00";
+long l=0l;
+boolean b_time=false;
+if(request.getParameter("time")!=null)
+{
+
+	 l=Long.valueOf(request.getParameter("time"));
+	 Date d=new Date(l);
+	 Format formatDate = new SimpleDateFormat("MM/dd/yyyy");
+	 Format formatTime = new SimpleDateFormat("HH:mm:ss");
+	 dat = formatDate.format(d);
+	 tim = formatTime.format(d);
+}
+String sqlQuery = "SELECT * FROM  " + tableName + "  where STR_TO_DATE(c_requestDate,'%m/%d/%Y')  > STR_TO_DATE('"+dat+"','%m/%d/%Y') AND STR_TO_DATE(c_requestTime,'%H:%i:%s')  > STR_TO_DATE('"+tim+"','%H:%i:%s') ORDER BY dateCreated DESC";
 %>
 
 <%
