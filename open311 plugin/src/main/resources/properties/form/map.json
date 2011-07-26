@@ -1,0 +1,56 @@
+[{
+    title : '@@form.map.editmap@@',
+    properties : [{
+        name : 'id',
+        label : '@@form.map.id@@',
+        type : 'textfield',
+        required : 'True',
+        regex_validation : '^[a-zA-Z0-9_]+$',
+        validation_message : '@@form.map.invalidId@@'
+    },
+    {
+        name : 'label',
+        label : '@@form.map.label@@',
+        type : 'textfield',
+        required : 'True'
+    },
+    {
+        name : 'value',
+        label : '@@form.map.value@@',
+        type : 'textfield'
+    },
+    {
+        name : 'format',
+        label : '@@form.map.format@@',
+        type : 'textfield',
+        description : '@@form.map.format.eg@@'
+    },
+    {
+        name : 'readonly',
+        label : '@@form.map.readonly@@',
+        type : 'checkbox',
+        value : 'False',
+        options : [{
+            value : 'true',
+            label : ''
+        }]
+    }]
+},
+{
+    title : '@@form.map.chooseValidator@@',
+    properties : [{
+        name : 'validator',
+        label : '@@form.map.validator@@',
+        type : 'elementselect',
+        options_ajax : '[CONTEXT_PATH]/web/property/json/getElements?classname=org.joget.apps.form.model.FormValidator',
+        url : '[CONTEXT_PATH]/web/property/json/getPropertyOptions'
+    }]
+},
+{
+    title : '@@form.map.workflowVariables@@',
+    properties : [{
+        name : 'workflowVariable',
+        label : '@@form.map.workflowVariable@@',
+        type : 'textfield'
+    }]
+}]
