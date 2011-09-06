@@ -30,7 +30,8 @@ public class DefaultActivator implements BundleActivator
     {
         registration = new ArrayList<ServiceRegistration>();
         registration.add(context.registerService(Open311Data.class.getName(), new Open311Data(), null));
-        registration.add(context.registerService(CustomFormField.class.getName(), new CustomFormField(), null));
+        //registration.add(context.registerService(CustomFormField.class.getName(), new CustomFormField(), null));
+        registration.add(context.registerService(ServiceParticipant.class.getName(), new ServiceParticipant(), null));
 
     }
 
